@@ -1,0 +1,25 @@
+{
+    "model_name": "Qwen3-8B-Instruct",
+    "layers": [16],
+    "clamp_norm_factor": 0.35,
+    "layer_selection": "all",
+    "fact_token": "last",
+    "lr": 2e-5,
+    "v_num_grad_steps": 60,
+    "v_lr": 0.5,
+    "v_loss_layer": 34,
+    "v_weight_decay": 5e-4,
+    "optim_num_step": 70,
+    "ex_data_num": 20,
+    "rewrite_module_tmp": "model.layers.{}.mlp.down_proj",
+    "layer_module_tmp": "model.layers.{}",
+    "mlp_module_tmp": "model.layers.{}.mlp",
+    "attn_module_tmp": "model.layers.{}.self_attn",
+    "ln_f_module": "model.norm",
+    "lm_head_module": "lm_head",
+    "window_size": 25,
+    "overlap": 5,
+    "select_first_window": 0,
+    "top_k_windows": 0
+
+}
